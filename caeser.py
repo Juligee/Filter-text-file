@@ -47,7 +47,7 @@ if users_choice == "e!":
 
 h = 404
 else:
-    if users_choice == "d":
+    if users_choice == "d jjj":
         x= decrypt(text,s)
         print(x)
 
