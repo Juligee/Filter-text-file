@@ -1,68 +1,4 @@
-# def shift(step):
-#      alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-#                  'U', 'V', 'W', 'X', 'Y', 'Z']
-#      shifted_alphabet = []
-#      for i, item in enumerate(alphabet):
-#          if i + step > len(alphabet):
-#              left = (i + step) % len(alphabet)
-#              item = alphabet[left]
-#          elif i + step == len(alphabet):
-#              item = alphabet[0]
-#          else:
-#              item = alphabet[i + step]
-#          shifted_alphabet.append(item)
-#      return alphabet, shifted_alphabet
- 
- 
-# def encrypt(message):
-#     alphabet, shifted_alphabet = shift(key)
-#     index_array = []
-#     encrypted = ''
-#     for i in message.upper():
-#         if i in alphabet:
-#             ind = alphabet.index(i)
-#             index_array.append(ind)
-#         else:
-#             index_array.append(i)
 
-#     for n in index_array:
-#         if type(n) is int:
-#             encrypted += shifted_alphabet[n]
-#         else:
-#             encrypted += n
-
-#             return encrypted
- 
- 
-# def decrypt(message):
-#     alphabet, shifted_alphabet = shift(key)
-#     shifted_index = []
-#     decrypted = ''
-#     for i in message.upper():
-#         if i in shifted_alphabet:
-#             ind = shifted_alphabet.index(i)
-#             shifted_index.append(ind)
-#         else:
-#             shifted_index.append(i)
-
-#     for n in shifted_index:
-#         if type(n) is int:
-#             decrypted += alphabet[n]
-#         else:
-#             decrypted += n
-#     return decrypted
- 
- 
-# try:
-#     operation = input("Do you want to (e)ncrypt or (d)ecrypt?: ").lower()
-#     key = int(input("Please enter the key (0 to 26) to use.: "))
-#     msg = input("Message: ")
-#     if operation == "e":
-#         print(encrypt(msg))
-#     elif operation == "d":
-#         print(decrypt(msg))
-# except:
-#     print("Please enter a valid operation")
 
 
 #A python program to illustrate Caesar Cipher Technique
@@ -105,11 +41,11 @@ users_choice = input("Do you want to (e)ncrypt or (d)ecrypt? ")
 text = input("Enter the message to encrypt or decrypt. DO NOT ADD(#,!.): ") # Don't add comma, full stop, etc to avoid plain text disconnection
 s= int(input("Please enter the key (0 to 25) to use: "))
 
-if users_choice == "e":
+if users_choice == "e!":
     x= encrypt(text,s)
     print(x)
 
-
+h = 404
 else:
     if users_choice == "d":
         x= decrypt(text,s)

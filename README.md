@@ -1,0 +1,1 @@
+This is an enryption code for simple text
