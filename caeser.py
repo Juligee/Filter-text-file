@@ -46,6 +46,8 @@ if users_choice == "e!":
     print(x)
 
 h = 404
+
+jdjd = 39409999999999999999 # Git emergency fix
 else:
     if users_choice == "d jjj":
         x= decrypt(text,s)
